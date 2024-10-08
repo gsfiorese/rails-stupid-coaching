@@ -1,0 +1,28 @@
+<body class="bg-light">
+
+  <div class="container mt-5">
+    <h1 class="mb-4">Your Question</h1>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="card-title">Question:</h5>
+        <p class="card-text"><%= @question %></p>
+        <p class="text-muted">"--You"</p>
+      </div>
+    </div>
+
+    <h2 class="mb-4">Response</h2>
+    <div class="card mb-4">
+      <div class="card-body">
+        <p class="card-text"><%= @answer %></p>
+        <p class="text-muted">"--Your couch"</p>
+      </div>
+    </div>
+
+    <a href="<%= ask_path %>" class="btn btn-primary">Ask another question</a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
